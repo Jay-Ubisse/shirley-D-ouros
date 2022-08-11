@@ -145,7 +145,7 @@
         color: #faa307;
     }
 
-    header>section>div#img {
+    header>section>div#menu-icon {
         display: none;
     }
 
@@ -324,7 +324,7 @@
         margin-left: 10px;
         color: #faa307;
     }
-    header>section>div#img {
+    header>section>div#menu-icon {
         position: absolute;
         top: 0;
         right: 0;
