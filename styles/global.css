@@ -5,6 +5,11 @@
     src: url(../fonts/Niconne-Regular.ttf);
 }
 
+@font-face {
+    font-family: source-sans;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
 * {
     box-sizing: border-box
 }
@@ -135,6 +140,7 @@
         font-weight: bold;
         font-size: 3rem;
         color: #ffecd1;
+        margin: 0;
     }
 
     header>section>div>h1>span {
@@ -142,6 +148,8 @@
     }
 
     header>section>div>p {
+        margin-top: 0;
+        font-family: source-sans;
         color: #faa307;
     }
 
@@ -186,7 +194,7 @@
         background-color: #78290f;
     }
 
-    #first {
+    .first {
         color: white;
         background-color: #78290f;
         border-left-style: solid;
@@ -194,7 +202,7 @@
         border-bottom-left-radius: 7px;
     }
 
-    #last {
+    .last {
         border-right-style: solid;
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
@@ -203,7 +211,39 @@
     main>section {
         margin-top: 80px;
     }
+    section#about {
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+    }
 
+    section#about > div#description {
+        font-family: source-sans;
+        color: #717171;
+    }
+
+    section#faq {
+        color: #717171;
+        background-color: white;
+        padding: 20px;
+    }
+    section#faq > h1 {
+        margin-left: 40px;
+    }
+    section#faq > div#faq-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px;
+        
+    }
+    section#faq > div#faq-container > div {
+        font-family: source-sans;
+        color: #717171;
+        width: 90%;
+        margin-left: 20px;
+    }
     footer>section#left {
         float: left;
         margin-bottom: 15px;
@@ -247,7 +287,11 @@
 
     footer>section#left>p {
         margin: 0;
-        font-size: small;
+        font-family: source-sans;
+    }
+
+    form label {
+        font-family: source-sans;
     }
 
     footer input {
@@ -367,6 +411,44 @@
     }
     main>section {
         margin-top: 40px;
+    }
+
+    section#about {
+        background-color: white;
+        display: block;
+        gap: 20px;
+        padding: 30px;
+        width: 85%;
+        margin: auto;
+    }
+
+    section#about > div#description {
+        font-family: source-sans;
+        color: #717171;
+    }
+
+    section#about > div#pic > img {
+        width: 100%;
+    }
+
+    section#faq {
+        color: #717171;
+        background-color: white;
+        width: 85%;
+        margin: auto;
+        padding: 20px;
+    }
+    section#faq > h1 {
+        margin-left: 20px;
+    }
+    section#faq > div#faq-container {
+        display: block;
+        gap: 15px;
+        margin: 20px;
+    }
+    section#faq > div#faq-container > div {
+        font-family: source-sans;
+        color: #717171;
     }
 
     footer>p {

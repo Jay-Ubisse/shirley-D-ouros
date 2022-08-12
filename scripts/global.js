@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-/**Codigo para o menu (versao mobile) */
+  /**Codigo para o menu (versao mobile) */
 
   $("#menu-icon").hide();
 
@@ -15,6 +15,68 @@ $(document).ready(function() {
       }
     });
   }
+
+  /**Codigo para mudanca de conteudo de pagina */
+  $("#faq").hide();
+  $("#about").hide();
+
+  $("#home").click(function() {
+    $("#about-us").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+    $("#home").css( {
+      "color": "white",
+      "background-color": "#78290f"
+    });
+    $("#frequent").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+
+    $("#slideshow").fadeIn(300);
+    $("#faq").hide();
+    $("#about").hide();
+
+  });
+  $("#about-us").click(function() {
+    $("#about-us").css( {
+      "color": "white",
+      "background-color": "#78290f"
+    });
+    $("#home").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+    $("#frequent").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+
+    $("#slideshow").hide();
+    $("#faq").hide();
+    $("#about").fadeIn(300);
+
+  });
+  $("#frequent").click(function() {
+    $("#about-us").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+    $("#home").css( {
+      "color": "#78290f",
+      "background-color": "#ffecd1"
+    });
+    $("#frequent").css( {
+      "color": "white",
+      "background-color": "#78290f"
+    });
+
+    $("#slideshow").hide();
+    $("#faq").fadeIn(300);
+    $("#about").hide();
+
+  });
 });
 
   /**Codigo para o slide show */
