@@ -190,12 +190,9 @@
         color: white;
         background-color: #78290f;
     }
-    header>nav>ul>li:first-child {
-        color: white;
-        background-color: #78290f;
-    }
     .first {
         color: white;
+        background: #78290f;
     }
     header>nav>ul>li>a {
         margin: 0;
