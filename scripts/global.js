@@ -73,7 +73,7 @@ $(document).ready(function() {
       });
       $("#home").css( {
         "color": "#78290f",
-        "background-color": "#ffecd1"
+        "background": "#ffecd1",
       });
       $("#frequent").css( {
         "color": "#78290f",
